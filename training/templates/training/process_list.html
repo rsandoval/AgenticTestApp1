@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block content %}
+  <h1>Procesos de capacitación</h1>
+  <ul>
+    {% for p in processes %}
+      <li>{{ p.name }} - {{ p.status }} ({{ p.start_date }} to {{ p.end_date }})</li>
+    {% empty %}
+      <li>No hay procesos registrados.</li>
+    {% endfor %}
+  </ul>
+{% endblock %}

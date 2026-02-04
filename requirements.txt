@@ -1,0 +1,5 @@
+Django>=4.2
+mssql-django>=1.4
+Pillow>=9.0
+# Optional: if you plan to expose APIs in the future
+drf-yasg>=1.20.0  # for API docs (optional)

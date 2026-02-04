@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block content %}
+  <h1>Dashboard de PIAmentor</h1>
+  <div class="stats">
+    <div class="stat">
+      <h3>Procesos activos</h3>
+      <p>{{ active_processes }}</p>
+    </div>
+    <div class="stat">
+      <h3>Estudiantes registrados</h3>
+      <p>{{ student_count }}</p>
+    </div>
+    <div class="stat">
+      <h3>Tasa de finalización</h3>
+      <p>{{ completion_rate }}%</p>
+    </div>
+  </div>
+{% endblock %}
