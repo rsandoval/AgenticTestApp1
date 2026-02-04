@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{22222222-2222-2222-2222-222222222222}</ProjectGuid>
+    <ProjectName>PIAmentor Django</ProjectName>
+    <RootNamespace>pia</RootNamespace>
+    <PythonVersion>3.12</PythonVersion>
+    <StartupFile>manage.py</StartupFile>
+    <StartupArguments>runserver 0.0.0.0:8000</StartupArguments>
+    <InterpreterPath>venv\Scripts\python.exe</InterpreterPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="manage.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="pia\**\*.py" />
+    <Content Include="accounts\**\*.py" />
+    <Content Include="training\**\*.py" />
+    <Content Include="dashboard\**\*.py" />
+    <Content Include="landing\**\*.py" />
+    <Content Include="templates\**\*.html" />
+    <Content Include="assets\**\*" />
+  </ItemGroup>
+</Project>
